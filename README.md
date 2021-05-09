@@ -10,9 +10,9 @@ O melhor estoque que vc pode ter!
 2. [Diagrama de classes](https://github.com/gbrlCM/Trabalho-Engenharia-Software/wiki/Diagrama-de-Classes)
 
 ## Entrega 03:
-1. [Diagrama de módulo](https://github.com/gbrlCM)
-2. [Diagrama de banco de dados](https://github.com/gbrlCM)
-3. [Protótipo de tela](https://github.com/gbrlCM)
+1. [Diagrama de módulo](https://github.com/gbrlCM/Trabalho-Engenharia-Software/blob/main/Documentos/Module-Conception.png)
+2. [Diagrama de banco de dados](https://github.com/gbrlCM/Trabalho-Engenharia-Software/blob/main/Documentos/DatabaseModel.png)
+3. [Protótipo de tela](https://github.com/gbrlCM/Trabalho-Engenharia-Software/blob/main/Documentos/Prototipo%20de%20tela.png)
 
 ## Entrega 04:
-1. [Implementação](https://github.com/gbrlCM)
+1. [Implementação](https://github.com/gbrlCM/Trabalho-Engenharia-Software/tree/main/Source/Shared)
