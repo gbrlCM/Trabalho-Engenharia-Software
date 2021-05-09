@@ -13,7 +13,7 @@ final class ItemsTableViewModel: ObservableObject {
     private let dataService: DataService = DSMock()
     private var cancellables = Set<AnyCancellable>()
     
-    @Published var items: [Item] = [] { didSet { print(items) } }
+    @Published var items: [Item] = []
     
     init() {
         getItems()
