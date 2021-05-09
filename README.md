@@ -16,4 +16,4 @@ O melhor estoque que vc pode ter!
 
 ## Entrega 04:
 1. [Implementação](https://github.com/gbrlCM/Trabalho-Engenharia-Software/tree/main/Source/Shared)
-2. [Atualização, diagrama de Classe]()
+2. [Atualização, diagrama de Classe](https://github.com/gbrlCM/Trabalho-Engenharia-Software/blob/main/Documentos/DiagramaDeClasse.png)
