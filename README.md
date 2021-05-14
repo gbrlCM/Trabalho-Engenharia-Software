@@ -17,3 +17,8 @@ O melhor estoque que vc pode ter!
 ## Entrega 04:
 1. [Implementação](https://github.com/gbrlCM/Trabalho-Engenharia-Software/tree/main/Source/Shared)
 2. [Atualização, diagrama de Classe](https://github.com/gbrlCM/Trabalho-Engenharia-Software/blob/main/Documentos/DiagramaDeClasse.png)
+
+## Entrega 05:
+1. [Plano de teste](https://github.com/gbrlCM/Trabalho-Engenharia-Software/wiki/Plano-de-Testes)
+2. [Caso de teste unitário](https://github.com/gbrlCM/Trabalho-Engenharia-Software/wiki/Caso-de-Teste-Unit%C3%A1rio-%7C-Classe-itemsViewModel)
+3. [Teste de sistema](https://github.com/gbrlCM/Trabalho-Engenharia-Software/wiki/Teste-de-sistema)
