@@ -1,5 +1,5 @@
 # EstOkay!
-O melhor estoque que vc pode ter!
+O melhor estoque que você pode ter!
 
 
 ## Entrega 01:
