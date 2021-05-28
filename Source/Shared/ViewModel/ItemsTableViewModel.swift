@@ -30,4 +30,12 @@ final class ItemsTableViewModel: ObservableObject {
         items.append(item)
     }
     
+    public func replaceItem(in index: Int, for item: Item) {
+        guard index < items.count , index >= 0 else {
+            print(index)
+            return
+        }
+        items[index] = item
+    }
+    
 }

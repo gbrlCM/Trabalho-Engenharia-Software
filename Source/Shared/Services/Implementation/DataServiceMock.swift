@@ -11,9 +11,9 @@ import Combine
 class DSMock: DataService {
     
     var items: [Item] = [
-        Item(id: 1, name: "Pudim", stock: 250, supplier: "Casa do Pudim", category: "Coisa dos deuses", price: 1.5),
-        Item(id: 2, name: "Chave de fenda", stock: 10, supplier: "TendTudo", category: "Material de construção", price: 20),
-        Item(id: 3, name: "Robo mario", stock: 1, supplier: "BAEA", category: "UM ROBO", price: 100000)
+        Item(id: 0, name: "Pudim", stock: 250, supplier: "Casa do Pudim", category: "Coisa dos deuses", price: 1.5),
+        Item(id: 1, name: "Chave de fenda", stock: 10, supplier: "TendTudo", category: "Material de construção", price: 20),
+        Item(id: 2, name: "Robo mario", stock: 1, supplier: "BAEA", category: "UM ROBO", price: 100000)
     ]
     
     func getAllItems() -> AnyPublisher<[Item], Never> {

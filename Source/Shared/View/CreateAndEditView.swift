@@ -15,10 +15,16 @@ struct CreateAndEditView: View {
     
     @State var name: String
     @State var category: String
-    @State var stock: Int?
+    @State var stock: Int = 0
     @State var supplier: String
-    @State var price: Float?
+    @State var price: Float
     @State var shoudShowAlert: Bool = false
+    
+    let integerFormatter: NumberFormatter = {
+            let formatter = NumberFormatter()
+            formatter.numberStyle = .decimal
+            return formatter
+        }()
     
     
     init(item: Item?, _ action: @escaping (_ item: Item) -> Void) {
@@ -35,17 +41,17 @@ struct CreateAndEditView: View {
             self.label = "Criar"
             self.name = ""
             self.category = ""
-            self.stock = nil
+            self.stock = 1
             self.supplier = ""
-            self.price = nil
+            self.price = 0
         }
         
         self.action = action
     }
     
     private func generateItem() -> Item {
-        guard let item = self.item, let stock = self.stock, let price = self.price else {
-            return Item(id: -1, name: name, stock: stock!, supplier: supplier, category: category, price: price!)
+        guard let item = self.item else {
+            return Item(id: -1, name: name, stock: stock, supplier: supplier, category: category, price: price)
         }
         
         return Item(id: item.id, name: name, stock: stock, supplier: supplier, category: category, price: price)
@@ -73,14 +79,16 @@ struct CreateAndEditView: View {
                     
                     HStack {
                         Text("Estoque:")
-                        TextField("42", value: $stock, formatter: NumberFormatter())
-                            .keyboardType(.numberPad)
+                        Stepper("\(stock)", value: $stock)
+                        
                     }
                     
                     HStack {
-                        Text("Preço: R$")
-                        TextField("1.99", value: $price, formatter: NumberFormatter())
-                            .keyboardType(.numbersAndPunctuation)
+                        Text("Preço:")
+                        VStack {
+                            Slider(value: $price, in: 0...100)
+                            Text("R$ \(price)")
+                        }
                     }
                     
                 }
@@ -88,10 +96,6 @@ struct CreateAndEditView: View {
             HStack {
                 Spacer()
                 Button(action: {
-                    guard stock != nil , price != nil else {
-                        shoudShowAlert = true
-                        return
-                    }
                     action(generateItem())
                 }) {
                     Text("Salva")

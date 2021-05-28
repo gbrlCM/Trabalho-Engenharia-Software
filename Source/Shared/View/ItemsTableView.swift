@@ -31,7 +31,7 @@ struct ItemsTableView: View {
                 , isActive: $isShowingCreateView) {}
                 NavigationLink(
                     destination: CreateAndEditView(item: currentItem) { item in
-                        self.viewModel.addItem(item)
+                        self.viewModel.replaceItem(in: item.id, for: item)
                     }
                     , isActive: $isSHowingEditView) {}
                 
